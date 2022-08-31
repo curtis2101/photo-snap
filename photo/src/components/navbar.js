@@ -26,7 +26,7 @@ export default function Header() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="#" className="flex items-center sm:mt-8 md:mt-0">
           STORIES
         </a>
       </Typography>
@@ -54,7 +54,7 @@ export default function Header() {
   );
  
   return (
-    <Navbar className="mx-auto max-w-screen-3xl py-2 px-4 lg:px-8 lg:py-4">
+    <Navbar className="mx-auto max-w-screen-3xl py-2 px-4 lg:px-8 lg:py-4 rounded-none shadow-none">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
@@ -62,7 +62,7 @@ export default function Header() {
           variant="small"
           className="mr-4 cursor-pointer py-1.5 font-normal"
         >
-          <img src={Logo} alt='logo' className='h-5 lg:ml-20'/>
+          <img src={Logo} alt='logo' className='h-3 md:h-5 lg:ml-20'/>
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <Button variant="" color='brown' size="md" className="rounded-none w-40 hidden lg:mr-20 lg:inline-block">
@@ -106,11 +106,13 @@ export default function Header() {
           )}
         </IconButton>
       </div>
-      <MobileNav open={openNav}>
+      <MobileNav open={openNav} className='flex flex-col items-center'>
         {navList}
-        <Button variant="" color="brown" size="sm" fullWidth className="mb-2 rounded-none w-5/6">
+        <div className="divide-y divide-solid divide-black w-full flex justify-center">
+        <Button variant="" color="brown" size="sm" fullWidth className=" rounded-none w-5/6 mb-4">
           <span>GET AN INVITE</span>
         </Button>
+        </div>
       </MobileNav>
     </Navbar>
   );
