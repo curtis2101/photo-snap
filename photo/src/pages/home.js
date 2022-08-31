@@ -1,11 +1,12 @@
 import React from 'react'
+import Header from '../components/navbar.js'
 
 
 const Home = () => {
     return ( 
-        <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+        <main className='flex flex-col h-screen w-full'>
+            <Header/>
+        </main>
     );
 }
 
