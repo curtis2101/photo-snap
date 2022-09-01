@@ -19,14 +19,14 @@ export default function Header() {
   }, []);
  
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className=" flex flex-col gap-2 lg:mb-0 lg:mt-0 md:flex-row md:items-center md:gap-6">
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center sm:mt-8 md:mt-0">
+        <a href="#" className="flex items-center font-bold text-xs sm:mt-8 md:mt-0">
           STORIES
         </a>
       </Typography>
@@ -36,7 +36,7 @@ export default function Header() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="#" className="flex font-bold text-xs items-center">
           FEATURES
         </a>
       </Typography>
@@ -46,7 +46,7 @@ export default function Header() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="#" className="flex font-bold text-xs items-center">
           PRICING
         </a>
       </Typography>
@@ -54,7 +54,7 @@ export default function Header() {
   );
  
   return (
-    <Navbar className="mx-auto max-w-screen-3xl py-2 px-4 lg:px-8 lg:py-4 rounded-none shadow-none">
+    <Navbar className="mx-auto max-w-screen-3xl py-2 px-4 md:px-8 md:py-4 rounded-none shadow-none">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
@@ -62,15 +62,15 @@ export default function Header() {
           variant="small"
           className="mr-4 cursor-pointer py-1.5 font-normal"
         >
-          <img src={Logo} alt='logo' className='h-3 md:h-5 lg:ml-20'/>
+          <img src={Logo} alt='logo' className='h-3 md:h-4 lg:ml-20'/>
         </Typography>
-        <div className="hidden lg:block">{navList}</div>
-        <Button variant="" color='brown' size="md" className="rounded-none w-40 hidden lg:mr-20 lg:inline-block">
-          <span>GET AN INVITE</span>
+        <div className="hidden md:block">{navList}</div>
+        <Button variant="" color='brown' size="md" className="rounded-none w-40 hidden lg:mr-20 md:inline-block">
+          <span className="md:font-bold md:text-xs">GET AN INVITE</span>
         </Button>
         <IconButton
           variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent md:hidden"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
@@ -108,6 +108,7 @@ export default function Header() {
       </div>
       <MobileNav open={openNav} className='flex flex-col items-center'>
         {navList}
+        <hr className='w-5/6 pb-5'></hr>
         <div className="divide-y divide-solid divide-black w-full flex justify-center">
         <Button variant="" color="brown" size="sm" fullWidth className=" rounded-none w-5/6 mb-4">
           <span>GET AN INVITE</span>
