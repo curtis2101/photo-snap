@@ -11,6 +11,7 @@ import Architec from '../assets/stories/mobile/architecturals.jpg'
 import Speaker from '../assets/features/desktop/embed.svg'
 import Figure8 from '../assets/features/desktop/no-limit.svg'
 import Tablet from '../assets/features/desktop/responsive.svg'
+import Footer from '../components/footer.js'
 
 
 
@@ -74,6 +75,7 @@ const Home = () => {
                         <p className='text-center w-9/12 opacity-60 mt-4 text-sm font-light pb-20'>Embed Tweets,Facebook posts,Instagram media,Vimeo or YouTube videos,Google Maps and more.</p>
                     </div>
                 </section>
+                <Footer/>
             </div>
         </main>
     );
