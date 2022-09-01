@@ -4,6 +4,11 @@ import Pic from '../assets/home/mobile/create-and-share.jpg'
 import {BsArrowRight} from 'react-icons/bs'
 import Laptop from '../assets/home/mobile/beautiful-stories.jpg'
 import Man from '../assets/home/mobile/designed-for-everyone.jpg'
+import Mountains from '../assets/stories/mobile/mountains.jpg'
+import City from '../assets/stories/mobile/cityscapes.jpg'
+import Voyage from '../assets/stories/mobile/18-days-voyage.jpg'
+import Architec from '../assets/stories/mobile/architecturals.jpg'
+
 
 
 const Home = () => {
@@ -29,6 +34,30 @@ const Home = () => {
                     <p className='text-black text-base font-light pb-6'>Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it. </p>
                     <button className='text-black text-xs font-bold flex items-center pb-16'>VIEW THE STORIES<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
                 </section>
+                <div style={{backgroundImage: `url(${Mountains})`}} className='bg-no-repeat bg-cover flex flex-col justify-end col-start-1 col-end-5 h-96'>
+                    <h2 className='text-lg font-bold pl-8 text-white'>The Mountains</h2>
+                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by John Appleseed</h3>
+                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
+                    <button className='inline-flex justify-between text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
+                </div>
+                <div style={{backgroundImage: `url(${City})`}} className='bg-no-repeat bg-cover flex flex-col justify-end col-start-1 col-end-5 h-96'>
+                    <h2 className='text-lg font-bold pl-8 text-white'>Sunset Cityscapes</h2>
+                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by Benjamin Cruz</h3>
+                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
+                    <button className='inline-flex justify-between text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
+                </div>
+                <div style={{backgroundImage: `url(${Voyage})`}} className='bg-no-repeat bg-cover flex flex-col justify-end col-start-1 col-end-5 h-96'>
+                    <h2 className='text-lg font-bold pl-8 text-white'>18 Days Voyage</h2>
+                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by Alexei Borodin</h3>
+                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
+                    <button className='inline-flex justify-between text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
+                </div>
+                <div style={{backgroundImage: `url(${Architec})`}} className='bg-no-repeat bg-cover flex flex-col justify-end col-start-1 col-end-5 h-96'>
+                    <h2 className='text-lg font-bold pl-8 text-white'>Architecturals</h2>
+                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by Samantha Brooke</h3>
+                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
+                    <button className='inline-flex justify-between text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
+                </div>
             </div>
         </main>
     );
