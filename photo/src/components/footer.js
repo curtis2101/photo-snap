@@ -9,7 +9,7 @@ import {BsArrowRight} from 'react-icons/bs'
 
 const Footer = () => {
     return ( 
-        <div className='col-start-1 col-end-5'>
+        <div className='col-start-1 col-end-6'>
             <div className='flex flex-col items-center bg-black'>
                 <img className='pt-14 w-44 mb-8' src={Logo} alt='logo'/>
                 <div className='flex gap-3 justify-items-center pb-12'>
