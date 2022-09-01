@@ -8,6 +8,9 @@ import Mountains from '../assets/stories/mobile/mountains.jpg'
 import City from '../assets/stories/mobile/cityscapes.jpg'
 import Voyage from '../assets/stories/mobile/18-days-voyage.jpg'
 import Architec from '../assets/stories/mobile/architecturals.jpg'
+import Speaker from '../assets/features/desktop/embed.svg'
+import Figure8 from '../assets/features/desktop/no-limit.svg'
+import Tablet from '../assets/features/desktop/responsive.svg'
 
 
 
@@ -58,6 +61,19 @@ const Home = () => {
                     <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
                     <button className='inline-flex justify-between text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
                 </div>
+                <section className='col-start-1 col-end-5'>
+                    <div className='flex flex-col items-center mt-20'>
+                        <img className='h-20 w-20' src={Tablet} alt='test'/>
+                        <h2 className='mt-12 text-lg font-bold'>100% Responsive</h2>
+                        <p className='text-center w-9/12 opacity-60 mt-4 text-sm font-light'>No matter which the device you're on, our site is fully responsive and stories look beautiful on any screen.</p>
+                        <img className='mt-14 w-18' src={Figure8} alt='figure8'/>
+                        <h2 className='mt-16 text-lg font-bold'>No Photo Upload Limit</h2>
+                        <p className='text-center w-9/12 opacity-60 mt-4 text-sm font-light'>Our tool has no limits on upload or bandwidth. Freely upload in bulk and share all of your stories in one go.</p>
+                        <img className='mt-14 w-18' src={Speaker} alt='figure8'/>
+                        <h2 className='mt-16 text-lg font-bold'>Available to Embed</h2>
+                        <p className='text-center w-9/12 opacity-60 mt-4 text-sm font-light pb-20'>Embed Tweets,Facebook posts,Instagram media,Vimeo or YouTube videos,Google Maps and more.</p>
+                    </div>
+                </section>
             </div>
         </main>
     );
