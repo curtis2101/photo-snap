@@ -11,22 +11,22 @@ const Footer = () => {
     return ( 
         <div className='col-start-1 col-end-7'>
             <div className='grid grid-cols-6 auto-rows-min bg-black'>
-                <img className='pt-14 mb-8 col-start-3 col-end-5' src={Logo} alt='logo'/>
-                <div className='col-start-2 col-end-6 flex gap-3 justify-center pb-12'>
+                <img className='pt-14 mb-8 col-start-3 col-end-5 md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2 md:pl-12' src={Logo} alt='logo'/>
+                <div className='col-start-2 col-end-6 md:col-start-1 md:col-end-3 md:pt-16 flex gap-3 md:justify-start md:pl-12 justify-center pb-12 md:pb-16'>
                     <img className='w-5 h-5' src={Facebook} alt='icon'/>
                     <img className='w-5 h-5' src={Youtube} alt='icon'/>
                     <img className='w-5 h-5' src={Twitter} alt='icon'/>
                     <img className='w-5 h-5' src={Pinterest} alt='icon'/>
                     <img className='w-5 h-5' src={Instagram} alt='icon'/>
                 </div>
-                <div className='flex flex-col justify-center col-start-3 col-end-4 pl-10'>
-                    <h2 className="text-xs text-white font-bold">HOME</h2>
-                    <h2 className="text-xs text-white font-bold pt-5">FEATURES</h2>
-                    <h2 className="text-xs text-white font-bold pt-5">STORIES</h2>
-                    <h2 className="text-xs text-white font-bold pt-5">PRICING</h2>
+                <div className='flex flex-col md:flex-row justify-center md:justify-start col-start-3 col-end-4 md:col-start-1 md:col-end-4 md:row-start-2 md:gap-6 pl-10 md:pl-12'>
+                    <h2 className="text-xs md:text-sm text-white font-bold">HOME</h2>
+                    <h2 className="text-xs md:text-sm text-white font-bold md:pt-0 pt-5">FEATURES</h2>
+                    <h2 className="text-xs md:text-sm text-white font-bold md:pt-0 pt-5">STORIES</h2>
+                    <h2 className="text-xs md:text-sm text-white font-bold md:pt-0 pt-5">PRICING</h2>
                 </div>
-                <button className='col-start-2 col-end-6 text-white text-xs font-bold flex items-center justify-center pt-28 pb-8'>GET AN INVITE<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                <p className='col-start-1 col-end-7 flex justify-center text-base text-opacity-50 font-normal text-white pb-14'>Copyright 2019.All Rights Reserved</p>
+                <button className='md:col-start-5 md:pr-10 md:pt-14 md:row-start-1 md:row-end-2 col-start-2 col-end-7 text-white text-xs md:text-sm font-bold flex items-center md:justify-end justify-center pt-28 pb-8'>GET AN INVITE<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
+                <p className='col-start-1 col-end-7 md:col-start-4 md:pr-10 md:pt-16 flex md:justify-end justify-center text-base text-opacity-50 font-normal text-white pb-14'>Copyright 2019.All Rights Reserved</p>
             </div>
         </div>
     );
