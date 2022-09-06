@@ -10,18 +10,18 @@ import {BsArrowRight} from 'react-icons/bs'
 const Footer = () => {
     return ( 
         <div className='col-start-1 col-end-9'>
-            <div className='grid grid-cols-6 auto-rows-min bg-black'>
+            <div className='grid grid-cols-6 lg:pl-44 lg:pr-44 auto-rows-min bg-black'>
                 <img className='pt-14 mb-8 col-start-3 col-end-5 md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2 md:pl-12' src={Logo} alt='logo'/>
-                <div className='col-start-2 col-end-6 md:col-start-1 md:col-end-3 md:pt-16 flex gap-3 md:justify-start md:pl-12 justify-center pb-12 md:pb-16'>
+                <div className='col-start-2 col-end-6 md:col-start-1 md:col-end-3 lg:col-end-2 md:pt-16 flex gap-3 md:justify-start md:pl-12 justify-center pb-12 md:pb-16'>
                     <img className='w-5 h-5' src={Facebook} alt='icon'/>
                     <img className='w-5 h-5' src={Youtube} alt='icon'/>
                     <img className='w-5 h-5' src={Twitter} alt='icon'/>
                     <img className='w-5 h-5' src={Pinterest} alt='icon'/>
                     <img className='w-5 h-5' src={Instagram} alt='icon'/>
                 </div>
-                <div className='flex flex-col md:flex-row justify-center md:justify-start col-start-3 col-end-4 md:col-start-1 md:col-end-4 md:row-start-2 md:gap-6 pl-10 md:pl-12'>
+                <div className='flex flex-col md:flex-row lg:flex-col justify-center md:justify-start col-start-3 col-end-4 md:col-start-1 md:col-end-4 lg:col-start-2 lg:col-end-3 md:row-start-2 md:gap-6 lg:gap-5 lg:row-start-1 lg:row-end-5 lg:pt-14 pl-10 md:pl-12 lg:pl-10'>
                     <h2 className="text-xs md:text-sm text-white font-bold">HOME</h2>
-                    <h2 className="text-xs md:text-sm text-white font-bold md:pt-0 pt-5">FEATURES</h2>
+                    <h2 className="text-xs md:text-sm text-white font-bold md:pt-0 pt-5 ">FEATURES</h2>
                     <h2 className="text-xs md:text-sm text-white font-bold md:pt-0 pt-5">STORIES</h2>
                     <h2 className="text-xs md:text-sm text-white font-bold md:pt-0 pt-5">PRICING</h2>
                 </div>

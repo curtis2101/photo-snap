@@ -63,16 +63,22 @@ const Home = () => {
                     <button className='inline-flex justify-between text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 lg:mr-5 text-2xl'><BsArrowRight/></span></button>
                 </div>
                 <section className='col-start-1 col-end-9'>
-                    <div className='flex flex-col items-center mt-20'>
-                        <img className='h-20 w-20' src={Tablet} alt='test'/>
-                        <h2 className='mt-12 text-lg font-bold'>100% Responsive</h2>
-                        <p className='text-center w-9/12 md:w-8/12 opacity-60 mt-4 text-sm md:text-base font-light'>No matter which the device you're on, our site is fully responsive and stories look beautiful on any screen.</p>
-                        <img className='mt-14 w-18' src={Figure8} alt='figure8'/>
-                        <h2 className='mt-16 text-lg font-bold'>No Photo Upload Limit</h2>
-                        <p className='text-center w-9/12 md:w-8/12 opacity-60 mt-4 text-sm md:text-base font-light'>Our tool has no limits on upload or bandwidth. Freely upload in bulk and share all of your stories in one go.</p>
-                        <img className='mt-14 w-18' src={Speaker} alt='figure8'/>
-                        <h2 className='mt-16 text-lg font-bold'>Available to Embed</h2>
-                        <p className='text-center w-9/12 md:w-8/12 opacity-60 mt-4 text-sm md:text-base font-light pb-20'>Embed Tweets,Facebook posts,Instagram media,Vimeo or YouTube videos,Google Maps and more.</p>
+                    <div className='flex flex-col lg:flex-row items-center  lg:mt-32 lg:mb-32 mt-20'>
+                        <div className='flex flex-col items-center lg:ml-44 lg:justify-center'>
+                            <img className='h-20 w-20' src={Tablet} alt='tablet'/>
+                            <h2 className='mt-12 text-lg font-bold'>100% Responsive</h2>
+                            <p className='text-center w-9/12 md:w-8/12 opacity-60 mt-4 text-sm md:text-base font-light'>No matter which the device you're on, our site is fully responsive and stories look beautiful on any screen.</p>
+                        </div>
+                        <div className='flex flex-col items-center lg:justify-center'>
+                            <img className='mt-14 lg:-mt-0 lg:h-16 lg:w-20' src={Figure8} alt='figure8'/>
+                            <h2 className='mt-16 text-lg font-bold'>No Photo Upload Limit</h2>
+                            <p className='text-center w-9/12 md:w-8/12 opacity-60 mt-4 text-sm md:text-base font-light'>Our tool has no limits on upload or bandwidth. Freely upload in bulk and share all of your stories in one go.</p>
+                        </div>
+                        <div className='flex flex-col items-center lg:mr-44 lg:justify-center'>
+                            <img className='mt-14 lg:mt-0 lg:h-16 lg:w-20' src={Speaker} alt='speaker'/>
+                            <h2 className='mt-16 text-lg font-bold'>Available to Embed</h2>
+                            <p className='text-center w-9/12 md:w-8/12 opacity-60 mt-4 text-sm md:text-base font-light lg:pb-0 pb-20'>Embed Tweets,Facebook posts,Instagram media,Vimeo or YouTube videos,Google Maps and more.</p>
+                        </div>
                     </div>
                 </section>
                 <Footer/>
