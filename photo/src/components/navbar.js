@@ -62,10 +62,10 @@ export default function Header() {
           variant="small"
           className="mr-4 cursor-pointer py-1.5 font-normal"
         >
-          <img src={Logo} alt='logo' className='h-3 md:h-4 lg:ml-20'/>
+          <img src={Logo} alt='logo' className='h-3 md:h-4 '/>
         </Typography>
         <div className="hidden md:block">{navList}</div>
-        <Button variant="" color='brown' size="md" className="rounded-none w-40 hidden lg:mr-20 md:inline-block">
+        <Button variant="" color='brown' size="md" className="rounded-none w-40 hidden md:inline-block">
           <span className="md:font-bold md:text-xs">GET AN INVITE</span>
         </Button>
         <IconButton
