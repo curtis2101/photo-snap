@@ -3,6 +3,14 @@ import Header from '../components/navbar.js'
 import Footer from '../components/footer.js'
 import Moon from '../assets/stories/mobile/moon-of-appalacia.jpg'
 import Mountain from '../assets/stories/mobile/mountains.jpg'
+import Voyage from '../assets/stories/mobile/18-days-voyage.jpg'
+import Architecturals from '../assets/stories/mobile/architecturals.jpg'
+import World from '../assets/stories/mobile/world-tour.jpg'
+import Corners from '../assets/stories/mobile/unforeseen-corners.jpg'
+import Africa from '../assets/stories/mobile/king-on-africa.jpg'
+import Trip from '../assets/stories/mobile/trip-to-nowhere.jpg'
+import Rage from '../assets/stories/mobile/rage-of-the-sea.jpg'
+import Running from '../assets/stories/mobile/running-free.jpg'
 import Sunset from '../assets/stories/mobile/cityscapes.jpg'
 import {BsArrowRight} from 'react-icons/bs'
 import Card from '../components/cards.js'
@@ -32,76 +40,54 @@ const Stories = () => {
                     title="Sunset Cityscapes"
                     author="by Benjamin Cruz"
                 />
-                <div style={{backgroundImage: `url(${Mountain})`}} className='bg-no-repeat bg-cover bg-center flex flex-col justify-end col-start-1 col-end-9 h-96'>
-                    <p className='text-white text-xs font-normal pl-8 pb-1'>April 11th 2020</p>
-                    <h2 className='text-lg font-bold pl-8 text-white'>The Mountains</h2>
-                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by John Appleseed</h3>
-                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
-                    <button className='inline-flex justify-between hover:underline text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                </div>
-                <div style={{backgroundImage: `url(${Mountain})`}} className='bg-no-repeat bg-cover bg-center flex flex-col justify-end col-start-1 col-end-9 h-96'>
-                    <p className='text-white text-xs font-normal pl-8 pb-1'>April 16th 2020</p>
-                    <h2 className='text-lg font-bold pl-8 text-white'>The Mountains</h2>
-                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by John Appleseed</h3>
-                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
-                    <button className='inline-flex justify-between hover:underline text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                </div>
-                <div style={{backgroundImage: `url(${Mountain})`}} className='bg-no-repeat bg-cover bg-center flex flex-col justify-end col-start-1 col-end-9 h-96'>
-                    <p className='text-white text-xs font-normal pl-8 pb-1'>April 16th 2020</p>
-                    <h2 className='text-lg font-bold pl-8 text-white'>18 Days Voyage</h2>
-                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by Alexei Borodin</h3>
-                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
-                    <button className='inline-flex justify-between hover:underline text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                </div>
-                <div style={{backgroundImage: `url(${Mountain})`}} className='bg-no-repeat bg-cover bg-center flex flex-col justify-end col-start-1 col-end-9 h-96'>
-                    <p className='text-white text-xs font-normal pl-8 pb-1'>April 9th 2020</p>
-                    <h2 className='text-lg font-bold pl-8 text-white'>Architecturals</h2>
-                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by Samantha Brooke</h3>
-                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
-                    <button className='inline-flex justify-between hover:underline text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                </div>
-                <div style={{backgroundImage: `url(${Mountain})`}} className='bg-no-repeat bg-cover bg-center flex flex-col justify-end col-start-1 col-end-9 h-96'>
-                    <p className='text-white text-xs font-normal pl-8 pb-1'>April 7th 2020</p>
-                    <h2 className='text-lg font-bold pl-8 text-white'>World Tour 2019</h2>
-                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by Timothy Wagner</h3>
-                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
-                    <button className='inline-flex justify-between hover:underline text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                </div>
-                <div style={{backgroundImage: `url(${Mountain})`}} className='bg-no-repeat bg-cover bg-center flex flex-col justify-end col-start-1 col-end-9 h-96'>
-                    <p className='text-white text-xs font-normal pl-8 pb-1'>April 3rd 2020</p>
-                    <h2 className='text-lg font-bold pl-8 text-white'>Unforeseen Corners</h2>
-                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by William Malcolm</h3>
-                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
-                    <button className='inline-flex justify-between hover:underline text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                </div>
-                <div style={{backgroundImage: `url(${Mountain})`}} className='bg-no-repeat bg-cover bg-center flex flex-col justify-end col-start-1 col-end-9 h-96'>
-                    <p className='text-white text-xs font-normal pl-8 pb-1'>March 29th 2020</p>
-                    <h2 className='text-lg font-bold pl-8 text-white'>King on Africa: Part II</h2>
-                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by Tim Hillenburg</h3>
-                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
-                    <button className='inline-flex justify-between hover:underline text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                </div>
-                <div style={{backgroundImage: `url(${Mountain})`}} className='bg-no-repeat bg-cover bg-center flex flex-col justify-end col-start-1 col-end-9 h-96'>
-                    <p className='text-white text-xs font-normal pl-8 pb-1'>March 21st 2020</p>
-                    <h2 className='text-lg font-bold pl-8 text-white'>The Trip to Nowhere</h2>
-                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by Felicia Rourke</h3>
-                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
-                    <button className='inline-flex justify-between hover:underline text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                </div>
-                <div style={{backgroundImage: `url(${Mountain})`}} className='bg-no-repeat bg-cover bg-center flex flex-col justify-end col-start-1 col-end-9 h-96'>
-                    <p className='text-white text-xs font-normal pl-8 pb-1'>March 19th 2020</p>
-                    <h2 className='text-lg font-bold pl-8 text-white'>Rage of The Sea</h2>
-                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by Mohammed Abdul</h3>
-                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
-                    <button className='inline-flex justify-between hover:underline text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                </div>
-                <div style={{backgroundImage: `url(${Mountain})`}} className='bg-no-repeat bg-cover bg-center flex flex-col justify-end col-start-1 col-end-9 h-96'>
-                    <p className='text-white text-xs font-normal pl-8 pb-1'>March 16th 2020</p>
-                    <h2 className='text-lg font-bold pl-8 text-white'>Running Free</h2>
-                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by Michelle</h3>
-                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
-                    <button className='inline-flex justify-between hover:underline text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                </div>
+                <Card   
+                    img={Voyage}
+                    date="April 16th 2020"
+                    title="18 Days Voyage"
+                    author="by Alexei Borodin"
+                />
+                <Card   
+                    img={Architecturals}
+                    date="April 9th 2020"
+                    title="Architecturals"
+                    author="by Samantha Brooke"
+                />
+                <Card   
+                    img={World}
+                    date="April 7th 2020"
+                    title="World Tour 2019"
+                    author="by Timothy Wagner"
+                />
+                <Card   
+                    img={Corners}
+                    date="April 3rd 2020"
+                    title="Unforeseen Corners"
+                    author="by William Malcolm"
+                />
+                <Card   
+                    img={Africa}
+                    date="March 29th 2020"
+                    title="King on Africa: Part II"
+                    author="by Tim Hillenburg"
+                />
+                <Card   
+                    img={Trip}
+                    date="March 21st 2020"
+                    title="The Trip to Nowhere"
+                    author="by Felicia Rourke"
+                />
+                <Card   
+                    img={Rage}
+                    date="March 19th 2020"
+                    title="Rage of The Sea"
+                    author="by Mohammed Abdul"
+                />
+                <Card   
+                    img={Running}
+                    date="March 16th 2020"
+                    title="Running Free"
+                    author="by Michelle"
+                />
                 <div style={{backgroundImage: `url(${Mountain})`}} className='bg-no-repeat bg-cover bg-center flex flex-col justify-end col-start-1 col-end-9 h-96'>
                     <p className='text-white text-xs font-normal pl-8 pb-1'>March 11th 2020</p>
                     <h2 className='text-lg font-bold pl-8 text-white'>Behind The Waves</h2>
