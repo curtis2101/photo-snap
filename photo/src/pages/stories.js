@@ -12,6 +12,12 @@ import Trip from '../assets/stories/mobile/trip-to-nowhere.jpg'
 import Rage from '../assets/stories/mobile/rage-of-the-sea.jpg'
 import Running from '../assets/stories/mobile/running-free.jpg'
 import Sunset from '../assets/stories/mobile/cityscapes.jpg'
+import Waves from '../assets/stories/mobile/behind-the-waves.jpg'
+import MilkyWay from '../assets/stories/mobile/milky-way.jpg'
+import Forest from '../assets/stories/mobile/dark-forest.jpg'
+import Somwarpet from '../assets/stories/mobile/somwarpet.jpg'
+import Dreams from '../assets/stories/mobile/land-of-dreams.jpg'
+import Waters from '../assets/stories/mobile/calm-waters.jpg'
 import {BsArrowRight} from 'react-icons/bs'
 import Card from '../components/cards.js'
 
@@ -88,48 +94,42 @@ const Stories = () => {
                     title="Running Free"
                     author="by Michelle"
                 />
-                <div style={{backgroundImage: `url(${Mountain})`}} className='bg-no-repeat bg-cover bg-center flex flex-col justify-end col-start-1 col-end-9 h-96'>
-                    <p className='text-white text-xs font-normal pl-8 pb-1'>March 11th 2020</p>
-                    <h2 className='text-lg font-bold pl-8 text-white'>Behind The Waves</h2>
-                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by Lamaar Wilson</h3>
-                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
-                    <button className='inline-flex justify-between hover:underline text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                </div>
-                <div style={{backgroundImage: `url(${Mountain})`}} className='bg-no-repeat bg-cover bg-center flex flex-col justify-end col-start-1 col-end-9 h-96'>
-                    <p className='text-white text-xs font-normal pl-8 pb-1'>March 9th 2020</p>
-                    <h2 className='text-lg font-bold pl-8 text-white'>Calm Waters</h2>
-                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by Samantha Brooke</h3>
-                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
-                    <button className='inline-flex justify-between hover:underline text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                </div>
-                <div style={{backgroundImage: `url(${Mountain})`}} className='bg-no-repeat bg-cover bg-center flex flex-col justify-end col-start-1 col-end-9 h-96'>
-                    <p className='text-white text-xs font-normal pl-8 pb-1'>March 5th 2020</p>
-                    <h2 className='text-lg font-bold pl-8 text-white'>The Milky Way</h2>
-                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by Benjamin Cruz</h3>
-                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
-                    <button className='inline-flex justify-between hover:underline text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                </div>
-                <div style={{backgroundImage: `url(${Mountain})`}} className='bg-no-repeat bg-cover bg-center flex flex-col justify-end col-start-1 col-end-9 h-96'>
-                    <p className='text-white text-xs font-normal pl-8 pb-1'>March 4th 2020</p>
-                    <h2 className='text-lg font-bold pl-8 text-white'>Night at The Dark Forest</h2>
-                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by Mohammed Abdul</h3>
-                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
-                    <button className='inline-flex justify-between hover:underline text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                </div>
-                <div style={{backgroundImage: `url(${Mountain})`}} className='bg-no-repeat bg-cover bg-center flex flex-col justify-end col-start-1 col-end-9 h-96'>
-                    <p className='text-white text-xs font-normal pl-8 pb-1'>March 1st 2020</p>
-                    <h2 className='text-lg font-bold pl-8 text-white'>Somwarpet's Beauty</h2>
-                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by Michelle</h3>
-                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
-                    <button className='inline-flex justify-between hover:underline text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                </div>
-                <div style={{backgroundImage: `url(${Mountain})`}} className='bg-no-repeat bg-cover bg-center flex flex-col justify-end col-start-1 col-end-9 h-96'>
-                    <p className='text-white text-xs font-normal pl-8 pb-1'>February 25th 2020</p>
-                    <h2 className='text-lg font-bold pl-8 text-white'>Land of Dreams</h2>
-                    <h3 className='text-xs font-light pl-8 pb-5 text-white'>by William Malcom</h3>
-                    <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
-                    <button className='inline-flex justify-between hover:underline text-white text-xs w-full pr-7 pl-8 font-bold items-center pb-10'>READ STORY<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                </div>
+                <Card   
+                    img={Waves}
+                    date="March 11th 2020"
+                    title="Behind The Waves"
+                    author="by Lamaar Wilson"
+                />
+                <Card   
+                    img={Waters}
+                    date="March 9th 2020"
+                    title="Calm Waters"
+                    author="by Samantha Brooke"
+                />
+                <Card   
+                    img={MilkyWay}
+                    date="March 5th 2020"
+                    title="The Milky Way"
+                    author="by Benjamin Cruz"
+                />
+                <Card   
+                    img={Forest}
+                    date="March 4th 2020"
+                    title="Night at The Dark Forest"
+                    author="by Mohammed Abdul"
+                />
+                <Card   
+                    img={Somwarpet}
+                    date="March 1st 2020"
+                    title="Somwarpet's Beauty"
+                    author="by Michelle"
+                />
+                <Card   
+                    img={Dreams}
+                    date="February 25th 2020"
+                    title="Land of Dreams"
+                    author="by William Malcom"
+                />
                 <Footer/>
             </div>
         </main>
