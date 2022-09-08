@@ -4,7 +4,7 @@ import {BsArrowRight} from 'react-icons/bs'
 const Card = (props) => {
     return (  
             <>
-            <p className='text-white text-xs font-normal pl-8 pb-1'>{props.date}</p>
+            <p className='text-white text-xs font-normal pl-8 pb-1 md:pt-80'>{props.date}</p>
             <h2 className='text-lg font-bold pl-8 text-white'>{props.title}</h2>
             <h3 className='text-xs font-light pl-8 pb-5 text-white'>{props.author}</h3>
             <hr className='w-5/6 ml-8 pb-4 opacity-30'/>
