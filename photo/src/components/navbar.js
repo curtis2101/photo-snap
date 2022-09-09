@@ -7,10 +7,18 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
- 
+import { useNavigate } from "react-router-dom";
+
 export default function Header() {
   const [openNav, setOpenNav] = useState(false);
- 
+  const navigate =useNavigate();
+  const storiesPage = () => {
+      navigate('/stories');
+  }
+  const home = () => {
+    navigate('/');
+}
+
   useEffect(() => {
     window.addEventListener(
       "resize",
@@ -26,7 +34,7 @@ export default function Header() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center font-bold text-xs sm:mt-8 md:mt-0 hover:opacity-30">
+        <a href="#" onClick={storiesPage} className="flex items-center font-bold text-xs sm:mt-8 md:mt-0 hover:opacity-30">
           STORIES
         </a>
       </Typography>
@@ -62,7 +70,7 @@ export default function Header() {
           variant="small"
           className="mr-4 cursor-pointer py-1.5 font-normal"
         >
-          <img src={Logo} alt='logo' className='h-3 md:h-4 '/>
+          <img onClick={home} src={Logo} alt='logo' className='h-3 md:h-4 '/>
         </Typography>
         <div className="hidden md:block">{navList}</div>
         <Button variant="" color='brown' size="md" className="rounded-none w-40 hover:bg-gray-200 hover:text-black hidden md:inline-block">
