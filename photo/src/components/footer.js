@@ -19,6 +19,10 @@ const Footer = () => {
     const home = () => {
         navigate('/');
     }
+    const price = () => {
+        navigate('/price');
+    }
+    
     
     return ( 
         <div className='col-start-1 col-end-9'>
@@ -35,7 +39,7 @@ const Footer = () => {
                     <h2 onClick={home} className="text-xs md:text-sm text-white font-bold cursor-pointer hover:opacity-30">HOME</h2>
                     <h2 onClick={storiesPage} className="text-xs md:text-sm text-white font-bold md:pt-0 pt-5 cursor-pointer hover:opacity-30">STORIES</h2>
                     <h2 onClick={featuresPage} className="text-xs md:text-sm text-white font-bold md:pt-0 pt-5 cursor-pointer hover:opacity-30">FEATURES</h2>
-                    <h2 className="text-xs md:text-sm text-white font-bold md:pt-0 pt-5 cursor-pointer hover:opacity-30">PRICING</h2>
+                    <h2 onClick={price} className="text-xs md:text-sm text-white font-bold md:pt-0 pt-5 cursor-pointer hover:opacity-30">PRICING</h2>
                 </div>
                 <button className='hover:underline md:col-start-5 md:pr-10 md:pt-14 md:row-start-1 md:row-end-2 col-start-2 col-end-7 text-white text-xs md:text-sm font-bold flex items-center md:justify-end justify-center pt-28 pb-8'>GET AN INVITE<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
                 <p className='col-start-1 col-end-7 md:col-start-4 md:pr-10 md:pt-16 flex md:justify-end justify-center text-base text-opacity-50 font-normal text-white pb-14'>Copyright 2019.All Rights Reserved</p>

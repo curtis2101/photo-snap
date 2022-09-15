@@ -21,6 +21,9 @@ export default function Header() {
   const home = () => {
     navigate('/');
 }
+const pricePage = () => {
+  navigate('/price');
+}
 
   useEffect(() => {
     window.addEventListener(
@@ -57,7 +60,7 @@ export default function Header() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex font-bold text-xs items-center hover:opacity-30">
+        <a href="#" onClick={pricePage} className="flex font-bold text-xs items-center hover:opacity-30">
           PRICING
         </a>
       </Typography>
