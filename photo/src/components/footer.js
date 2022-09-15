@@ -10,6 +10,9 @@ import { useNavigate } from 'react-router-dom'
 
 const Footer = () => {
     const navigate =useNavigate();
+    const featuresPage = () => {
+        navigate('/features');
+    }
     const storiesPage = () => {
         navigate('/stories');
     }
@@ -30,8 +33,8 @@ const Footer = () => {
                 </div>
                 <div className='flex flex-col md:flex-row lg:flex-col justify-center md:justify-start col-start-3 col-end-4 md:col-start-1 md:col-end-4 lg:col-start-2 lg:col-end-3 md:row-start-2 md:gap-6 lg:gap-5 lg:row-start-1 lg:row-end-5 lg:pt-14 pl-10 md:pl-12 lg:pl-32'>
                     <h2 onClick={home} className="text-xs md:text-sm text-white font-bold cursor-pointer hover:opacity-30">HOME</h2>
-                    <h2 className="text-xs md:text-sm text-white font-bold md:pt-0 pt-5 cursor-pointer hover:opacity-30">FEATURES</h2>
                     <h2 onClick={storiesPage} className="text-xs md:text-sm text-white font-bold md:pt-0 pt-5 cursor-pointer hover:opacity-30">STORIES</h2>
+                    <h2 onClick={featuresPage} className="text-xs md:text-sm text-white font-bold md:pt-0 pt-5 cursor-pointer hover:opacity-30">FEATURES</h2>
                     <h2 className="text-xs md:text-sm text-white font-bold md:pt-0 pt-5 cursor-pointer hover:opacity-30">PRICING</h2>
                 </div>
                 <button className='hover:underline md:col-start-5 md:pr-10 md:pt-14 md:row-start-1 md:row-end-2 col-start-2 col-end-7 text-white text-xs md:text-sm font-bold flex items-center md:justify-end justify-center pt-28 pb-8'>GET AN INVITE<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
