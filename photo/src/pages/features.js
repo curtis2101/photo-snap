@@ -23,7 +23,7 @@ const Features = () => {
                 <img src={Camera} alt='man holding camera' className='md:hidden flex col-start-1 col-end-9 w-full h-72'/>
                 <img src={Camera2} alt='man holding camera' className='hidden md:block lg:hidden col-start-6 col-end-9 row-start-1 w-full '/>
                 <img src={Camera3} alt='man holding camera' className='hidden lg:block col-start-4 col-end-9 row-start-1 w-full h-full'/>
-                <div className='col-start-1 col-end-9 md:col-end-4 pl-7 pr-7 md:pl-14 md:pr-14 lg:pl-20 lg:pr-20 bg-black text-white '>
+                <div className='col-start-1 col-end-9 lg:col-end-4 md:col-end-6 pl-7 pr-7 md:pl-14 md:pr-14 lg:pl-20 lg:pr-20 bg-black text-white '>
                     <h1 className='text-3xl md:text-4xl font-bold pt-16 md:mt-44 md:pt-0 lg:pt-20'>FEATURES</h1>
                     <p className='font-normal text-base md:text-lg opacity-60 pt-4 md:pt-5 lg:pt-7 lg:w-full pb-16 md:pb-0 md:mb-44'>We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.</p>
                 </div>
