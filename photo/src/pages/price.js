@@ -6,8 +6,7 @@ import Woman from '../assets/pricing/mobile/hero.jpg'
 import { useState } from 'react';
 import Card from '../components/priceCards.js'
 import TickBox from '../components/tickBoxes.js'
-import Desert from '../assets/shared/mobile/bg-beta.jpg'
-import {BsArrowRight} from 'react-icons/bs'
+import Beta from '../components/beta.js'
 
 
 const Price = () => {
@@ -144,10 +143,7 @@ const Price = () => {
                         />
                     </div>
                 </div>
-                <div style={{backgroundImage: `url(${Desert})`}} className='md:hidden pl-8 md:pl-10 pr-8 md:pr-10 flex flex-col md:justify-between md:flex-row text-white pt-16 pb-16 col-start-1 col-end-9 bg-no-repeat bg-cover bg-center'>
-                    <h2 className='text-4xl font-bold uppercase pb-6 md:w-5/12 '>We’re in beta. Get your invite today!</h2>
-                    <button className='text-xs font-bold flex items-center hover:underline'>GET AN INVITE<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
-                </div>
+                <Beta />
                 <Footer/>
             </div>
         </main>
