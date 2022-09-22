@@ -5,6 +5,10 @@ import Footer from '../components/footer.js'
 import Woman from '../assets/pricing/mobile/hero.jpg'
 import { useState } from 'react';
 import Card from '../components/priceCards.js'
+import TickBox from '../components/tickBoxes.js'
+import Desert from '../assets/shared/mobile/bg-beta.jpg'
+import {BsArrowRight} from 'react-icons/bs'
+
 
 const Price = () => {
     const [toggle,setToggle] = useState(false)
@@ -100,6 +104,50 @@ const Price = () => {
                         textColor='black'
                         />
                 </div>}
+                <div className='col-start-1 col-end-9 pt-16 flex justify-center'>
+                    <div className='flex flex-col w-10/12'>
+                        <h2 className='font-bold text-xs text-black pb-6'>THE FEATURES</h2>
+                        <hr className='pb-6 border-black border-1'></hr>
+                        <TickBox
+                        heading='UNLIMITED STORY POSTING'
+                        />
+                        <TickBox
+                        heading='UNLIMITED PHOTO UPLOAD'
+                        />
+                        <TickBox
+                        heading='EMBEDDING CUSTOM CONTENT'
+                        basic='hidden'
+                        />
+                        <TickBox
+                        heading='CUSTOMIZE METADATA'
+                        basic='hidden'
+                        />
+                        <TickBox
+                        heading='ADVANCED METRICS'
+                        basic='hidden'
+                        pro='hidden'
+                        />
+                        <TickBox
+                        heading='PHOTO DOWNLOADS'
+                        basic='hidden'
+                        pro='hidden'
+                        />
+                        <TickBox
+                        heading='SEARCH ENGINE INDEXING'
+                        basic='hidden'
+                        pro='hidden'
+                        />
+                        <TickBox
+                        heading='CUSTOM ANALYTICS'
+                        basic='hidden'
+                        pro='hidden'
+                        />
+                    </div>
+                </div>
+                <div style={{backgroundImage: `url(${Desert})`}} className='md:hidden pl-8 md:pl-10 pr-8 md:pr-10 flex flex-col md:justify-between md:flex-row text-white pt-16 pb-16 col-start-1 col-end-9 bg-no-repeat bg-cover bg-center'>
+                    <h2 className='text-4xl font-bold uppercase pb-6 md:w-5/12 '>We’re in beta. Get your invite today!</h2>
+                    <button className='text-xs font-bold flex items-center hover:underline'>GET AN INVITE<span className='ml-4 text-2xl'><BsArrowRight/></span></button>
+                </div>
                 <Footer/>
             </div>
         </main>
