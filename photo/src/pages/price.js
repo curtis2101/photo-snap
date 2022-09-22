@@ -16,7 +16,7 @@ const Price = () => {
         <main className='flex flex-col h-screen w-full overflow-x-hidden overflow-scroll'>
             <Header/>
             <div className='grid grid-cols-8 auto-rows-min'>
-                <img src={Woman} alt='woman with camera' className='col-start-1 col-end-9'/>
+                <img src={Woman} alt='woman with camera' className='col-start-1 col-end-9 w-full'/>
                 <div className='col-start-1 col-end-9 lg:col-end-4 md:col-end-6 pl-7 pr-7 md:pl-14 md:pr-14 lg:pl-20 lg:pr-20 bg-black text-white '>
                     <h1 className='text-3xl md:text-4xl font-bold pt-16 md:mt-44 md:pt-0 lg:pt-20'>PRICING</h1>
                     <p className='font-normal text-base md:text-lg opacity-60 pt-4 md:pt-5 lg:pt-7 lg:w-full pb-16 md:pb-0 md:mb-44'>Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.</p>
