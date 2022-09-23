@@ -37,7 +37,7 @@ const Price = () => {
                     </section>  }
                 </div>
                 {toggle?
-                    <div className='col-start-1 col-end-9 flex flex-col items-center gap-6'>
+                    <div className='col-start-1 col-end-9 flex flex-col lg:flex-row lg:justify-center items-center gap-6 lg:gap-7'>
                         <Card
                         heading='Basic'
                         text='Includes basic usage of our platform. Recommended for new and aspiring photographers.'
@@ -59,6 +59,9 @@ const Price = () => {
                         buttonColor='white'
                         buttonTextColor='black'
                         textColor='white'
+                        top='lg:pt-20'
+                        bottom='lg:pb-20'
+                        shadow='lg:shadow-2xl'
                         />
                         <Card
                         heading='Business'
@@ -72,7 +75,7 @@ const Price = () => {
                         textColor='black'
                         />
                 </div> :
-                <div className='col-start-1 col-end-9 flex flex-col items-center gap-6'>
+                <div className='col-start-1 col-end-9 flex flex-col lg:flex-row lg:justify-center items-center gap-6 lg:gap-7'>
                         <Card
                         heading='Basic'
                         text='Includes basic usage of our platform. Recommended for new and aspiring photographers.'
@@ -94,6 +97,9 @@ const Price = () => {
                         buttonColor='white'
                         buttonTextColor='black'
                         textColor='white'
+                        top='lg:pt-20'
+                        bottom='lg:pb-20'
+                        shadow='lg:shadow-2xl'
                         />
                         <Card
                         heading='Business'
