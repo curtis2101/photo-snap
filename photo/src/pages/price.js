@@ -107,9 +107,17 @@ const Price = () => {
                         textColor='black'
                         />
                 </div>}
-                <div className='col-start-1 col-end-9 pt-16 flex justify-center'>
+                <div className='col-start-1 col-end-9 pt-16 md:pt-28 md:pb-28 flex justify-center'>
                     <div className='flex flex-col w-10/12'>
-                        <h2 className='font-bold text-xs text-black pb-6'>THE FEATURES</h2>
+                        <h1 className='hidden md:flex text-5xl font-bold justify-center pb-16'>COMPARE</h1>
+                        <section className='flex flex-col md:flex-row md:justify-between md:ml-4'>
+                            <h2 className='font-bold text-xs text-black pb-6'>THE FEATURES</h2>
+                            <div className='hidden md:grid grid-cols-8 w-7/12 justify-items-center'>
+                                <h2 className='font-bold text-xs text-black pb-6 col-start-1 col-end-3'>BASIC</h2>
+                                <h2 className='font-bold text-xs text-black pb-6 col-start-4 col-end-6'>PRO</h2>
+                                <h2 className='font-bold text-xs text-black pb-6 col-start-7 col-end-9'>BUSINESS</h2>
+                            </div>
+                        </section>
                         <hr className='pb-6 border-black border-1'></hr>
                         <TickBox
                         heading='UNLIMITED STORY POSTING'
