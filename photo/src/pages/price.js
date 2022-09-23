@@ -107,8 +107,8 @@ const Price = () => {
                         textColor='black'
                         />
                 </div>}
-                <div className='col-start-1 col-end-9 pt-16 md:pt-28 md:pb-28 flex justify-center'>
-                    <div className='flex flex-col w-10/12'>
+                <div className='col-start-1 col-end-9 pt-16 md:pt-28 md:pb-28 flex justify-center '>
+                    <div className='flex flex-col w-10/12 lg:w-7/12'>
                         <h1 className='hidden md:flex text-5xl font-bold justify-center pb-16'>COMPARE</h1>
                         <section className='flex flex-col md:flex-row md:justify-between md:ml-4'>
                             <h2 className='font-bold text-xs text-black pb-6'>THE FEATURES</h2>
